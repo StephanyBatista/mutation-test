@@ -1,0 +1,24 @@
+{
+  "name": "mutation-test",
+  "version": "1.0.0",
+  "description": "Lab to learn about mutation test",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && nyc --reporter=text mocha test --recursive --timeout 150000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mocha": "^2.2.43",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "mocha-typescript": "^1.1.8",
+    "nyc": "^11.2.1",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "stryker": "^0.9.3",
+    "stryker-api": "^0.8.0",
+    "stryker-mocha-runner": "^0.7.0"
+  }
+}
