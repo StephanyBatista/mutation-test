@@ -17,10 +17,6 @@ export class Produto{
         return this._preco;
     }
 
-    public get estaNaPromocao() : boolean {
-        return this._preco <= 20;
-    }
-
     constructor(nome: string, descricao: string, preco: number) {
         
         DomainException.when(!nome || nome == '', "Nome é obrigatório");
@@ -28,6 +24,11 @@ export class Produto{
         this._nome = nome;
         this._descricao = descricao;
         this._preco = preco;
+    }
+
+    public get estaNaPromocao() : boolean {
+        
+        return this._preco <= 20;
     }
 
     public alterarNome(nome: string){
