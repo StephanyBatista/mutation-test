@@ -2,17 +2,17 @@ import { DomainException } from './DomainException';
 
 export class Produto{
     
-    private readonly _nome : string;
+    private _nome : string;
     public get nome() : string {
         return this._nome;
     }
     
-    private readonly _descricao : string;
+    private _descricao : string;
     public get descricao() : string {
         return this._descricao;
     }
     
-    private readonly _preco : number;
+    private _preco : number;
     public get preco() : number {
         return this._preco;
     }
@@ -28,5 +28,10 @@ export class Produto{
         this._nome = nome;
         this._descricao = descricao;
         this._preco = preco;
+    }
+
+    public alterarNome(nome: string){
+        
+        this._nome = nome;
     }
 }
