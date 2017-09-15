@@ -9,7 +9,6 @@ describe('Produto', () => {
 
     it('deve criar um produto', () => {
 
-        
         var produto = new Produto(nome, descricao, preco);
 
         assert.equal(nome, produto.nome);

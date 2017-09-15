@@ -16,7 +16,7 @@ describe('Produto', () => {
         var novoNome = 'nome 2';
         var produto = new produto_1.Produto(nome, descricao, preco);
         produto.alterarNome(novoNome);
-        //assert.equal(novoNome, produto.nome);
+        chai_1.assert.equal(novoNome, produto.nome);
     });
     it('deve estar na promocao quando preço do produto for 19', () => {
         var preco = 19;
