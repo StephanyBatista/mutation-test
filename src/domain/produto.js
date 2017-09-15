@@ -20,6 +20,9 @@ class Produto {
         this._descricao = descricao;
         this._preco = preco;
     }
+    alterarNome(nome) {
+        this._nome = nome;
+    }
 }
 exports.Produto = Produto;
 //# sourceMappingURL=produto.js.map
