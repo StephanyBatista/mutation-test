@@ -21,9 +21,6 @@ describe('Produto', () => {
     it('não deve criar produto com nome vazio', () => {
         chai_1.assert.throws(() => { new produto_1.Produto('', descricao, preco); }, "Nome é obrigatório");
     });
-    it('não deve criar produto sem nome', () => {
-        chai_1.assert.throws(() => { new produto_1.Produto(null, descricao, preco); }, "Nome é obrigatório");
-    });
     it('deve estar na promocao quando preço do produto for 19', () => {
         var preco = 19;
         var produto = new produto_1.Produto(nome, descricao, preco);
