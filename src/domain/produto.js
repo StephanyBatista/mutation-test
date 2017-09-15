@@ -12,7 +12,7 @@ class Produto {
         return this._preco;
     }
     get estaNaPromocao() {
-        return this._preco < 20;
+        return this._preco <= 20;
     }
     constructor(nome, descricao, preco) {
         DomainException_1.DomainException.when(!nome || nome == '', "Nome é obrigatório");
