@@ -17,19 +17,5 @@ describe('Produto', () => {
         var produto = new produto_1.Produto(nome, descricao, preco);
         chai_1.assert.equal(true, produto.estaNaPromocao);
     });
-    it('não deve criar produto sem nome', () => {
-        var preco = 19;
-        chai_1.assert.throws(() => { new produto_1.Produto('', descricao, preco); }, "Nome é obrigatório");
-    });
-    it('não deve estar na promocao quando preço do produto for 21', () => {
-        var preco = 21;
-        var produto = new produto_1.Produto(nome, descricao, preco);
-        chai_1.assert.equal(false, produto.estaNaPromocao);
-    });
-    it('não deve estar na promocao quando preço do produto for 20', () => {
-        var preco = 20;
-        var produto = new produto_1.Produto(nome, descricao, preco);
-        chai_1.assert.equal(false, produto.estaNaPromocao);
-    });
 });
 //# sourceMappingURL=productTest.js.map

@@ -18,7 +18,7 @@ export class Produto{
     }
 
     public get estaNaPromocao() : boolean {
-        return this._preco < 20;
+        return this._preco <= 20;
     }
 
     constructor(nome: string, descricao: string, preco: number) {
