@@ -7,5 +7,9 @@ describe('Domain Exception', () => {
         var mensagem = 'mensagem';
         chai_1.assert.throws(() => { domainException_1.DomainException.when(true, mensagem); }, mensagem);
     });
+    it('não deve lançar exceção quando instrução for falsa', () => {
+        var mensagem = 'mensagem';
+        chai_1.assert.doesNotThrow(() => { domainException_1.DomainException.when(false, mensagem); }, mensagem);
+    });
 });
 //# sourceMappingURL=domainExceptionTest.js.map
